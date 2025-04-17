@@ -7,6 +7,7 @@ import 'package:talent_insider_learning/app/core/themes/style.dart';
 import 'package:talent_insider_learning/app/global_widgets/custom_form_field.dart';
 import 'package:talent_insider_learning/app/global_widgets/primary_button.dart';
 import 'package:talent_insider_learning/app/global_widgets/secondary_button.dart';
+import 'package:talent_insider_learning/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -95,7 +96,12 @@ class LoginView extends GetView<LoginController> {
                 ],
               ),
               SizedBox(height: 16),
-              SecondaryButton(title: 'Explore without Login', onPressed: () {}),
+              SecondaryButton(
+                title: 'Explore without Login',
+                onPressed: () {
+                  Get.toNamed(Routes.MAIN);
+                },
+              ),
             ],
           ),
         ),

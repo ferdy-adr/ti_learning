@@ -31,7 +31,7 @@ class PrimaryButton extends StatelessWidget {
             EdgeInsetsDirectional.all(isCompact ? 8 : 14),
           ),
           backgroundColor: WidgetStatePropertyAll(
-            enabled ? Style.buttonFill : Colors.grey,
+            enabled ? Style.secondaryColor01 : Colors.grey,
           ),
           overlayColor: WidgetStatePropertyAll(Color(0xFFD35151)),
         ),
