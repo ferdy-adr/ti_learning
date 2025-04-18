@@ -48,6 +48,11 @@ class AppPages {
       binding: HomeBinding(),
     ),
     GetPage(
+      name: _Paths.PROFILE,
+      page: () => const ProfileView(),
+      binding: ProfileBinding(),
+    ),
+    GetPage(
       name: _Paths.COURSES,
       page: () => const CoursesView(),
       binding: CoursesBinding(),

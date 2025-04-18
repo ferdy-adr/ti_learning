@@ -165,24 +165,17 @@ class LessonView extends GetView<LessonController> {
                           Row(
                             children: [
                               _TabHeader(
-                                text: 'Overview',
+                                text: 'Contents',
                                 isActive: controller.tabIndex.value == 0,
                                 onTap: () {
                                   controller.tabIndex.value = 0;
                                 },
                               ),
                               _TabHeader(
-                                text: 'Contents',
+                                text: 'More Like This',
                                 isActive: controller.tabIndex.value == 1,
                                 onTap: () {
                                   controller.tabIndex.value = 1;
-                                },
-                              ),
-                              _TabHeader(
-                                text: 'More Like This',
-                                isActive: controller.tabIndex.value == 2,
-                                onTap: () {
-                                  controller.tabIndex.value = 2;
                                 },
                               ),
                             ],
@@ -190,8 +183,6 @@ class LessonView extends GetView<LessonController> {
                           const SizedBox(height: 12),
 
                           if (controller.tabIndex.value == 0) ...[
-                            Column(children: []),
-                          ] else if (controller.tabIndex.value == 1) ...[
                             Column(
                               children:
                                   List.generate(
@@ -218,7 +209,7 @@ class LessonView extends GetView<LessonController> {
                                     ),
                                   ).toList(),
                             ),
-                          ] else if (controller.tabIndex.value == 2) ...[
+                          ] else if (controller.tabIndex.value == 1) ...[
                             Column(
                               children:
                                   List.generate(

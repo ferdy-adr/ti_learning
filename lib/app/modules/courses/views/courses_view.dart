@@ -15,18 +15,17 @@ class CoursesView extends GetView<CoursesController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Style.background01,
-      appBar: CustomAppBar(
-        title: 'Courses',
-      ),
+      appBar: CustomAppBar(title: 'Courses'),
       body: SafeArea(
-        child: ListView(
+        child: ListView.separated(
           padding: EdgeInsets.all(Style.minimumMargin),
-          children: [
-            _CourseItem(
-              course: Course.fromJson({}),
-              onPressed: () => Get.toNamed(Routes.LESSON),
-            ),
-          ],
+          itemCount: 5,
+          separatorBuilder: (context, index) => Divider(),
+          itemBuilder:
+              (context, index) => _CourseItem(
+                course: Course.fromJson({}),
+                onPressed: () => Get.toNamed(Routes.LESSON),
+              ),
         ),
       ),
     );
@@ -53,7 +52,7 @@ class _CourseItem extends StatelessWidget {
               height: 88,
               fit: BoxFit.cover,
               image: NetworkImage(
-                'https://plus.unsplash.com/premium_photo-1682144187125-b55e638cf286?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydHJhaXQlMjBtYW58ZW58MHx8MHx8fDA%3D',
+                'https://courses.iid.org.in/public//uploads/media_manager/645.jpg',
               ),
             ),
           ),
