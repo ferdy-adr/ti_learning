@@ -51,7 +51,11 @@ class HomeView extends GetView<HomeController> {
                           label: 'Courses',
                           onTap: () => Get.toNamed(Routes.COURSES),
                         ),
-                        _MenuItem(icon: Assets.lessonIcon, label: 'Audio Book'),
+                        _MenuItem(
+                          icon: Assets.lessonIcon,
+                          label: 'Audio Book',
+                          onTap: () => Get.toNamed(Routes.AUDIO_BOOK),
+                        ),
                       ],
                     ),
                   ],

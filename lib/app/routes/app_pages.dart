@@ -1,5 +1,9 @@
 import 'package:get/get.dart';
 
+import '../modules/audio_book/bindings/audio_book_binding.dart';
+import '../modules/audio_book/views/audio_book_view.dart';
+import '../modules/audio_player/bindings/audio_player_binding.dart';
+import '../modules/audio_player/views/audio_player_view.dart';
 import '../modules/courses/bindings/courses_binding.dart';
 import '../modules/courses/views/courses_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -54,9 +58,14 @@ class AppPages {
       binding: LessonBinding(),
     ),
     GetPage(
-      name: _Paths.PROFILE,
-      page: () => const ProfileView(),
-      binding: ProfileBinding(),
+      name: _Paths.AUDIO_BOOK,
+      page: () => const AudioBookView(),
+      binding: AudioBookBinding(),
+    ),
+    GetPage(
+      name: _Paths.AUDIO_PLAYER,
+      page: () => const AudioPlayerView(),
+      binding: AudioPlayerBinding(),
     ),
   ];
 }
