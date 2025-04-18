@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:talent_insider_learning/app/core/consts/assets.dart';
 import 'package:talent_insider_learning/app/core/themes/fonts.dart';
 import 'package:talent_insider_learning/app/core/themes/style.dart';
+import 'package:talent_insider_learning/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -45,7 +46,11 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     Wrap(
                       children: [
-                        _MenuItem(icon: Assets.courseIcon, label: 'Courses'),
+                        _MenuItem(
+                          icon: Assets.courseIcon,
+                          label: 'Courses',
+                          onTap: () => Get.toNamed(Routes.COURSES),
+                        ),
                         _MenuItem(icon: Assets.lessonIcon, label: 'Audio Book'),
                       ],
                     ),
