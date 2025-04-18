@@ -29,7 +29,7 @@ flutter run
 
 ## Usage
 
-Untuk password login dashboard bisa menggunakan akun berikut :
+Untuk login bisa menggunakan akun berikut :
 
 email : jhon@test.com </br>
 password : test
