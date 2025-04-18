@@ -4,6 +4,8 @@ import '../modules/courses/bindings/courses_binding.dart';
 import '../modules/courses/views/courses_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/lesson/bindings/lesson_binding.dart';
+import '../modules/lesson/views/lesson_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/main/bindings/main_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.COURSES,
       page: () => const CoursesView(),
       binding: CoursesBinding(),
+    ),
+    GetPage(
+      name: _Paths.LESSON,
+      page: () => const LessonView(),
+      binding: LessonBinding(),
     ),
   ];
 }

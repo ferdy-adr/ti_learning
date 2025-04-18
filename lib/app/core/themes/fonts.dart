@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 abstract class Fonts {
+  static const TextStyle poppins = TextStyle(
+    fontFamily: 'Poppins',
+    color: Colors.white,
+    leadingDistribution: TextLeadingDistribution.even,
+    letterSpacing: 0,
+  );
   static const TextStyle mainText = TextStyle(
     fontFamily: 'Poppins',
     color: Colors.white,

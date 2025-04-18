@@ -14,4 +14,5 @@ abstract class Style {
   static const Color secondaryColor01 = Color(0xFFC51011);
   // sub-section: Grey
   static const Color lightGrey = Color(0xFF787777);
+  static const Color darkGrey = Color(0xFF303030);
 }

@@ -13,7 +13,9 @@ dependencies:
   flutter_dotenv: ^5.2.1
   flutter_secure_storage: ^9.2.4
   get: ^4.7.2
+  pod_player: ^0.2.2
   pretty_dio_logger: ^1.4.0
+  skeletonizer: ^1.4.3
 
 dev_dependencies:
   flutter_lints: ^5.0.0
