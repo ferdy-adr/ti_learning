@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:talent_insider_learning/app/modules/courses/views/courses_view.dart';
+import 'package:talent_insider_learning/app/modules/profile/views/profile_view.dart';
 
 import '../../../core/consts/assets.dart';
 import '../../../core/themes/fonts.dart';
@@ -17,7 +19,7 @@ class MainView extends GetView<MainController> {
       body: PageView(
         controller: controller.pageController,
         physics: NeverScrollableScrollPhysics(),
-        children: [HomeView(), SizedBox(), SizedBox()],
+        children: [HomeView(), CoursesView(), ProfileView()],
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(

@@ -81,8 +81,10 @@ class LoginView extends GetView<LoginController> {
               SizedBox(height: 40),
               PrimaryButton(
                 title: 'Log in',
-                onPressed: () {
-                  if (controller.formKey.currentState?.validate() ?? false) {}
+                onPressed: () async {
+                  if (controller.formKey.currentState?.validate() ?? false) {
+                    await controller.login();
+                  }
                 },
               ),
               SizedBox(height: 16),
