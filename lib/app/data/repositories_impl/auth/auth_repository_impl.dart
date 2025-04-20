@@ -28,7 +28,7 @@ class AuthRepositoryImpl extends AuthRepository {
       );
 
       User tempUser = User.fromJson(response.data['user']);
-      tempUser.addToken(response.data['token']);
+      tempUser = tempUser.addToken(response.data['token']);
       return Result.success(tempUser);
     } on DioException catch (e) {
       if ((e.response?.statusCode ?? 0) >= 400 &&

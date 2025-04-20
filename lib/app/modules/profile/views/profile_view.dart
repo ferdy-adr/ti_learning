@@ -50,9 +50,7 @@ class ProfileView extends GetView<ProfileController> {
                       ),
                       child: SecondaryButton(
                         title: 'Logout',
-                        onPressed: () async {
-                          await controller.authController.logout();
-                        },
+                        onPressed: () async => await controller.logout(),
                       ),
                     ),
                   ),

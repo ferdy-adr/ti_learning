@@ -95,7 +95,8 @@ class AuthController extends GetxController {
 
   Future<Result<String>> logout() async {
     try {
-      // step 1: Hapus data User pada local storage
+      // step 1: Hapus data User pada state dan secure storage
+      user.value = null;
       await _clearStorage();
 
       // step 2: Return result
