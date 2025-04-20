@@ -9,7 +9,7 @@ Project Talent Insider Learning for Talent Insider technical test using Flutter.
   <img  src="https://github.com/user-attachments/assets/a40153c4-fdfe-497c-9e0d-f192403d6947"  width=120/>
   <img  src="https://github.com/user-attachments/assets/9e3ad2d8-e905-4b8f-a890-d57d0b1abbef"  width=120/>
   <img  src="https://github.com/user-attachments/assets/845379f5-bdec-47d4-9f35-66d706afb70d"  width=120/>
-  <img  src="https://github.com/user-attachments/assets/3979fbfd-2e5e-4d3b-b2db-645f0b6fcdb1"  width=120/>
+  <img  src="https://github.com/user-attachments/assets/1fbcd7c6-d7fc-490c-9f69-e8955380e43b"  width=120/>
 </p>
 
 # Installing
