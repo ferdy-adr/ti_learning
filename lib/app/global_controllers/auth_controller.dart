@@ -19,7 +19,7 @@ class AuthController extends GetxController {
   void onReady() async {
     await Future.delayed(
       // Durasi splashscreen minimal 2 detik
-      const Duration(seconds: 0),
+      const Duration(seconds: 2),
       () async {
         // step 1: Ambil token dari local storage
         final token = await _secureStorage.read(key: Keys.accessToken);
